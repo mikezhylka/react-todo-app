@@ -65,6 +65,7 @@ export const TodoItem: React.FC<Props> = ({ todo }) => {
             data-cy="TodoTitleField"
             type="text"
             className="todo__title-field"
+            placeholder="Type to change todo"
             value={todoQuery}
             onKeyDown={e => handleRename(todo, e)}
             onBlur={() => handleRename(todo)}
